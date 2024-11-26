@@ -22,7 +22,7 @@ Este es mi sitio web personal alojado en [GitHub Pages](https://pages.github.com
 Para ver la página web en tu navegador, sigue estos pasos:
 
 1. Abre tu navegador web.
-2. Dirígete a [https://lnnb.github.io/](https://lnnb.github.io/) (sustituye `tu-usuario` por tu nombre de usuario de GitHub).
+2. Dirígete a [https://lnnb.github.io/](https://lnnb.github.io/).
    
 ## Personalización
 
