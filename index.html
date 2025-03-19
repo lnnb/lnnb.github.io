@@ -3,148 +3,314 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-------------FONT AWESOME------------->
-    <script src="https://kit.fontawesome.com/7649f2e53f.js"></script>
-    <!-------------HTMLtoPDF------------->
-    <script> src="html2pdf.bundle.min.js"</script>
-    <!-------------BOOTSTRAP------------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-------------CUSTOM CSS------------->
+    <meta name="description" content="Curriculum Vitae de Luciano N. Navarrete Binni - Técnico de Sistemas y Desarrollador Web">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- HTML to PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./img/logo.png">
-    <title>CV Responsive</title>
+    <title>Luciano Navarrete | CV Profesional</title>
 </head>
 
 <body>
-    <div class="home">
-        <div class="row align-items-center mx-2 my-2">
-            <div class="col-lg-4 col-md-4 col-12">
-                <div class="card ">
-                    <div class="img">
-                        <img class="rounded m-auto" src="img/profile.jpg" width="100%">
+    <div class="container py-5 resume-content">
+        <div class="row g-4">
+            <!-- Left Column: Profile and Skills -->
+            <div class="col-lg-4 col-md-5">
+                <!-- Profile Card -->
+                <div class="card">
+                    <div class="profile-header text-center py-4">
+                        <img class="profile-img img-fluid mb-3" src="img/profile.jpg" alt="Luciano Navarrete">
+                        <h2 class="mb-0 text-white">Luciano N. Navarrete Binni</h2>
+                        <p class="text-light mb-0">Técnico de Sistemas & Desarrollador Web</p>
                     </div>
-
-                        <h2 class="ml-4 mt-3 text-center">Luciano N. Navarrete Binni</h2>
-                        <h6 class="ml-4 mt-3 text-center">32 Años</h6>
-                        <!--<div class="col-md-12 text-center mb-3">
-                            <button class="btn btn-primary" id="btnCrearPdf">Convert to PDF</button>
-                        </div>-->
-                        <hr class="mt-n1">
-                        <div class="card-body mt-n3">
-                            <h6><i class="fas fa-briefcase mr-2"></i> Técnico de Sistemas, Desarrollador Web</h6>
-                            <h6><i class="fa-solid fa-house"></i> Tigre, Buenos Aires</h6>
-                            <h6><i class="fa-solid fa-envelope"></i> luciano.n.n.binni@gmail.com</h6>
-                            <h6><i class="fa-solid fa-phone"></i> 11 2401 3957</h6>
-                            <hr>
-                            <h3><i class="fa-solid fa-asterisk mr-2"></i> Habilidades</h3>
-                            <h6 class="text-center"> HTML </h6>
-                            <div class="progress rounded-pill my-3" style="height: 20px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                    
+                    <div class="card-body">
+                        <!-- Contact Information -->
+                        <div class="mb-4">
+                            <h5 class="mb-3"><i class="fas fa-user-circle me-2"></i>Información Personal</h5>
+                            <div class="ps-2">
+                                <p class="mb-2"><i class="fas fa-calendar me-2"></i>32 Años</p>
+                                <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Tigre, Buenos Aires</p>
+                                <p class="mb-2"><i class="fas fa-envelope me-2"></i>luciano.n.n.binni@gmail.com</p>
+                                <p class="mb-2"><i class="fas fa-phone me-2"></i>11 2401 3957</p>
                             </div>
-                            <h6 class="text-center"> CSS </h6>
-                            <div class="progress rounded-pill my-3" style="height: 20px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                        </div>
+                        
+                        <!-- Skills Section -->
+                        <div class="mb-4">
+                            <h5 class="mb-3"><i class="fas fa-code me-2"></i>Habilidades Técnicas</h5>
+                            
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>HTML</span>
+                                    <span>1 Año</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <h6 class="text-center"> JavaScript </h6>
-                            <div class="progress rounded-pill my-3" style="height: 20px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>CSS</span>
+                                    <span>1 Año</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <h6 class="text-center"> Bootstrap 5 </h6>
-                            <div class="progress rounded-pill my-3" style="height: 20px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>JavaScript</span>
+                                    <span>1 Año</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <h6 class="text-center"> Ruby </h6>
-                            <div class="progress rounded-pill my-3" style="height: 20px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Bootstrap 5</span>
+                                    <span>1 Año</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <hr>
-                            <h3><i class="fa-solid fa-globe mr-3 mt-3 mb-4 "></i> Lenguaje </h3>
-                            <h6 class="text-center"> Inglés </h6>
-                            <div class="progress rounded-pill my-3" style="height: 20px;">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%">Intermedio</div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Ruby</span>
+                                    <span>1 Año</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Languages Section -->
+                        <div class="mb-4">
+                            <h5 class="mb-3"><i class="fas fa-globe me-2"></i>Idiomas</h5>
+                            
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Inglés</span>
+                                    <span>Intermedio</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Education Summary (New section for left column) -->
+                        <div>
+                            <h5 class="mb-3"><i class="fas fa-graduation-cap me-2"></i>Formación</h5>
+                            <ul class="list-unstyled ps-2">
+                                <li class="mb-2">
+                                    <i class="fas fa-university me-2"></i>UTN - Técnico Universitario en Programación
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-university me-2"></i>TamaBA - Técnico Superior en Sonido
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-laptop-code me-2"></i>Argentina Programa 4.0
+                                </li>
+                                <li>
+                                    <i class="fas fa-school me-2"></i>I.A.D.E.S. - Bachillerato en Informática
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- PDF Button (Mobile Only) -->
+                        <div class="d-md-none text-center mt-4">
+                            <button id="btnCrearPdf" class="btn btn-primary"><i class="fas fa-file-pdf me-2"></i>Descargar CV</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Experience and Education -->
+            <div class="col-lg-8 col-md-7">
+                <!-- Experience Card -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2><i class="fas fa-briefcase me-2"></i>Experiencia Laboral</h2>
+                        
+                        <!-- Nueva experiencia: Especialista en asistencia técnica -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Especialista en asistencia técnica</h5>
+                                <h6>Hospital Universitario Austral</h6>
+                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>May 2024 – September 2024</p>
+                                <p>
+                                    <ul>
+                                        <li>Gestioné la migración informática de más de 1.000 portátiles y sistemas AIO (All-in-One) de sobremesa, garantizando transiciones sin problemas a entornos de hardware y software actualizados.</li>
+                                        <li>Me encargué de la transferencia de datos, la instalación de software y realicé rigurosas pruebas de rendimiento para asegurar una funcionalidad y una experiencia de usuario óptimas.</li>
+                                        <li>Resolví problemas posteriores a la migración para abordar cualquier inconveniente técnico, asegurando un funcionamiento fluido e ininterrumpido en toda la organización.</li>
+                                        <li>Proporcioné asistencia técnica completa y resoluciones oportunas de problemas de hardware y software, logrando un índice de satisfacción del cliente del 95% mediante el diagnóstico y la resolución eficaz de problemas informáticos en la infraestructura hospitalaria.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Nueva experiencia: Analista de soporte técnico -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Analista de soporte técnico</h5>
+                                <h6>Volkswagen</h6>
+                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>July 2023 – January 2024</p>
+                                <p>
+                                    <ul>
+                                        <li>Proporcioné soporte técnico para maquinaria de líneas de producción automatizadas, solucionando problemas y resolviendo incidencias para garantizar una operación continua y una eficiencia máxima.</li>
+                                        <li>Diagnostiqué y resolví fallos del sistema, implementando soluciones que optimizaron los procesos de producción y redujeron significativamente los tiempos de inactividad.</li>
+                                        <li>Aseguré el cumplimiento de los estándares de calidad y seguridad, siguiendo las normativas de la industria para mantener un entorno de trabajo seguro y eficiente.</li>
+                                        <li>Mantuve y solucioné problemas en sistemas de TI, redes y software, asegurando una funcionalidad óptima y minimizando los tiempos de inactividad en toda la organización.</li>
+                                        <li>Brindé soporte técnico remoto a través de TeamViewer, ofreciendo soluciones rápidas y garantizando operaciones fluidas de los sistemas.</li>
+                                        <li>Utilicé herramientas de análisis de red como Advanced IP Scanner para diagnosticar y resolver problemas de conectividad, asegurando un rendimiento robusto de la red.</li>
+                                        <li>Implementé protocolos de seguridad y gestioné procesos de copias de seguridad, protegiendo datos críticos y garantizando la preparación para la recuperación ante desastres.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Nueva experiencia: Técnico de soporte de sistemas -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Técnico de soporte de sistemas</h5>
+                                <h6>Cenattel</h6>
+                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>February 2020 – May 2022</p>
+                                <p>
+                                    <ul>
+                                        <li>Mantuve y solucioné problemas en sistemas de TI, redes y software, asegurando una funcionalidad óptima y minimizando los tiempos de inactividad en toda la organización.</li>
+                                        <li>Brindé soporte técnico remoto a través de TeamViewer, ofreciendo soluciones rápidas y garantizando operaciones fluidas de los sistemas.</li>
+                                        <li>Utilicé herramientas de análisis de red como Advanced IP Scanner para diagnosticar y resolver problemas de conectividad, asegurando un rendimiento robusto de la red.</li>
+                                        <li>Establecí medidas de seguridad avanzadas y modernicé los procedimientos de copia de seguridad para proteger datos sensibles de más de 50 usuarios.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Nueva experiencia: Técnico de asistencia técnica -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Técnico de asistencia técnica</h5>
+                                <h6>Hewlett Packard Enterprise / DXC</h6>
+                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>July 2017 – March 2019</p>
+                                <p>
+                                    <ul>
+                                        <li>Proporcioné soporte técnico remoto para los sistemas POS de McDonald's, impresoras y redes, asegurando resoluciones oportunas para minimizar las interrupciones operativas.</li>
+                                        <li>Diagnostiqué y resolví incidentes, abordando rápidamente los problemas técnicos para garantizar un servicio ininterrumpido y mantener el tiempo de actividad de los sistemas.</li>
+                                        <li>Capacité a los empleados en el uso de sistemas de TI y en las mejores prácticas de ciberseguridad, mejorando el conocimiento del equipo y reforzando las operaciones seguras.</li>
+                                        <li>Colaboré con equipos multifuncionales para implementar actualizaciones de sistemas utilizando marcos de trabajo ITIL, mejorando la eficiencia del flujo de trabajo y optimizando los procesos operativos.</li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-8 col-12">
-                    <div class="card mt-4 shadow-sm">
-                        <div class="card-body">
-                            <h2><i class="fa-solid fa-briefcase mb-2 mr-2"></i> Experiencia Laboral</h2>
-                            <h5 class="mt-4">Técnico Nivel 2 - Hospital Austral</h5>
-                            <h6><i class="fas fa-calendar my-3 mr-3"></i> 2024 - <button class="btn btn-success px-3 py-0"> Actual
-                            </h6> 
-                            <p>Migraciónes de PC/Laptops, reparación de laptops y PC escritorios, Administración de AD, ABM de AD</p>
-                            <hr>
-                            <h5 class="mt-4">Técnico Nivel 2 - VolksWagen</h5>
-                            <h6><i class="fas fa-calendar my-3 mr-3"></i> 2023 - 2024
-                            </h6> 
-                            <p>Soporte a equipamiento de primera línea de producción: Clonación de imagen Android en Handhelds y Scanners. Formateo y migración de SO Windows en paneles táctile. Soporte y gestión de bases de datos en Fisjit. Administración de equipos en WSUS. Administración de seguridad McCaffe.</p>
-                            <hr>
-                            <h5 class="mt-4">Técnico Sistemas / Dev Front End - Cenattel</h5>
-                            <h6><i class="fas fa-calendar my-3 mr-3"></i> 2020 - 2022
-                            <p>Mantenimiento, reparación y armado de PCs. Gestión y mantenimento del Rack Datacenter, Servidores, Servidores Virtuales y Máquinas Virtuales. Desarrollador Front-End.</p>
-                            <hr>
-                            <h5 class="mt-4">Técnico en Sonido / Ingeniero de Mezcla y Mastering - ADDA Studio / AudioRave</h5>
-                            <h6><i class="fas fa-calendar my-3 mr-3"></i> Agosto 2019 - <button class="btn btn-success px-3 py-0"> Actual 
-                            </h6>
-                            <p>Mezcla y Mastering de piezas musicales.</p>
-                            <hr>
-                            <h5 class="mt-4">Soporte Técnico - HP Enterprise / DXC</h5>
-                            <h6><i class="fas fa-calendar my-3 mr-3"></i> 2017 - 2019
-                            </h6>
-                            <p> Soporte Técnico para Arcos Dorados, diagnóstico y resolución remota de todo equipo informático de locales McDonals de LATAM.</p>
-                            <hr>
-                            <h5 class="mt-4">Técnico de Informática - GNB Informática</h5>
-                            <h6><i class="fas fa-calendar my-3 mr-3"></i> 2009 - 2014
-                            </h6>
-                            <p>Armado, diagnóstico y reparación de PC/Laptops.</p>
+                
+                <!-- Education Card -->
+                <div class="card">
+                    <div class="card-body">
+                        <h2><i class="fas fa-graduation-cap me-2"></i>Educación Detallada</h2>
+                        
+                        <!-- Nueva educación: Técnico Superior en Programación -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Técnico Superior en Programación</h5>
+                                <h6>Universidad Tecnológica Nacional</h6>
+                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>February 2019 – December 2026</p>
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <h2 class="mb-2"><i class="fas fa-certificate mr-3"></i> Educación</h2>
-                            <h5 class="mt-4">I.A.D.E.S. <h6>(Estudios Secundarios)</h6></h5>
-                            <h6><i class="fas-calendar mr-2"></i>2005 - 2012</h6>
-                            <p>Bachillerato Orientado en Informática</p>
-                            <hr>
-                            <h5 class="mt-4">TamaBA <h6>(Estudios Terciarios)</h6></h5>
-                            <h6><i class="fas-calendar mr-2"></i>2017 - en curso</h6>
-                            <hr>
-                            <h5 class="mt-4">UTN <h6>(Estudios Terciarios)</h6></h5>
-                            <h6><i class="fas-calendar mr-2"></i>2019 - en curso</h6>
-                            <p>Tecnicatura, Técnico Universitario en Programación</p>
-                            <hr>
-                            <h5 class="mt-4">ComunidadIT</h5>
-                            <h6><i class="fas-calendar mr-2"></i>2013 - 2013</h6>
-                            <p>Programador Java ,JavaScript & MySQL</p>
-                            <p>Técnico Superior en Sonido con Orientación en Producción, Técnico de
-                                grabación de sonido</p>
-                            <h5 class="mt-4">Argentina Programa 4.0</h5>
-                            <h6><i class="fas-calendar mr-2"></i>2022 - Presente</h6>
-                            <p>Programación Full Stack</p>
+                        
+                        <!-- Nueva educación: Python -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Python</h5>
+                                <h6>Argentina Programa 4.0</h6>
+                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>June 2023 – September 2023</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Nueva educación: Curso de programación informática -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Curso de programación informática</h5>
+                                <h6>YoProgramo</h6>
+                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>September 2022 – April 2023</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Nueva educación: Java & JavaScript Developer -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5>Java & JavaScript Developer</h5>
+                                <h6>Comunidad IT</h6>
+                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>February 2016 – January 2017</p>
+                            </div>
+                        </div>
+                        
+                        <!-- CV Download -->
+                        <div class="text-center mt-4">
+                            <button id="btnCrearPdf" class="btn btn-primary"><i class="fas fa-file-pdf me-2"></i>Descargar CV</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-<!-------------PDF BUTTON------------->
-
-<!-------------FOOTER------------->
-<div class="col-xl-12">
-    <div class="p-4 bg-4 text-white text-center">Copyright - All rights reserved for Navarrete Binni Luciano
     </div>
     
-</div>
-<!-------------TO TOP SICKY ICON------------->
- <a href="#" class="to-top">
-    <i class="fa-solid fa-circle-chevron-up"></i>
- </a>
-<!-------------SCRIPTS------------->
-<script src="./js/main.js"></script>
-<script src="./js/pdf.js"></script>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 - Todos los derechos reservados | Luciano Navarrete Binni</p>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
