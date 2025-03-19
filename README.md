@@ -1,6 +1,7 @@
 # 🚀 Welcome to my personal website.
 
-This is my personal website hosted on [GitHub Pages](https://pages.github.com/). Here you will find information about my projects, music and other content related to my activities as **DJ Producer** and **content creator**.
+This is my personal website hosted on [GitHub Pages](https://pages.github.com/).
+Here you will find my personal resume.
 
 ---
 
