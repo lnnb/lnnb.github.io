@@ -17,7 +17,9 @@ body {
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    padding-bottom: 60px;
+    display: flex; /* Convierte el body en un contenedor flexible */
+    flex-direction: column; /* Organiza los elementos en columna */
+    padding-bottom: 0; /* Elimina el padding inferior */
 }
 
 /* General Typography */
@@ -83,6 +85,11 @@ p {
     color: white;
     padding: 1.5rem;
     border-radius: 8px 8px 0 0;
+}
+
+.resume-content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    padding-bottom: 60px; /* Añade un padding inferior si es necesario */
 }
 
 /* Skill Bars */
@@ -155,15 +162,17 @@ p {
     margin-left: 10px;
 }
 
-/* Footer */
 .footer {
-    background-color: var(--dark-color);
-    color: white;
-    padding: 1.5rem 0;
-    text-align: center;
-    position: relative;
-    margin-top: 2rem;
+    background-color: var(--dark-color); /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 1.5rem 0; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Ocupa el 100% del ancho */
+    margin-top: auto; /* Empuja el footer hacia la parte inferior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior */
+    height: 50px;
 }
+
 
 /* Back to top button */
 .to-top {
@@ -200,7 +209,7 @@ p {
 }
 
 /* Responsive adjustments */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .card-body {
         padding: 1.5rem;
     }
@@ -217,6 +226,10 @@ p {
     
     .timeline-content {
         padding-left: 40px;
+    }
+    .footer {
+        padding: 1rem 0; /* Reducir el padding en dispositivos móviles */
+        font-size: 0.9rem; /* Reducir el tamaño de la fuente */
     }
 }
 

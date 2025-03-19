@@ -1,46 +1,44 @@
-# 🚀 Welcome to my personal website.
+# Bienvenido a mi página web
 
-This is my personal website hosted on [GitHub Pages](https://pages.github.com/).
-Here you will find my personal resume.
+Este es mi sitio web personal alojado en [GitHub Pages](https://pages.github.com/). Aquí puedes encontrar información sobre mis proyectos, música y otros contenidos relacionados con mis actividades como DJ Productor y creador de contenido.
 
----
+## Estructura del proyecto
 
-## 🗂️ Project structure
+- **index.html**: La página principal del sitio web.
+- **assets/**: Contiene imágenes, videos y otros recursos multimedia utilizados en el sitio.
+- **css/**: Archivos de estilo CSS para la personalización visual del sitio.
+- **js/**: Scripts JavaScript que agregan funcionalidades interactivas.
+- **README.md**: Este archivo de instrucciones.
 
-The project is organized as follows:
+## Tecnologías utilizadas
 
-- **`index.html`**: The main page of the website.
-- **`assets/`**: Contains images, videos and other multimedia resources used on the site.
-- **`css/`**: CSS style files for visual customization of the site.
-- **`js/`**: JavaScript scripts that add interactive functionalities.
-- **`README.md`**: This instruction file.
+- **HTML5**: Para la estructura básica del sitio web.
+- **CSS3**: Para el diseño y la estética del sitio web.
+- **JavaScript**: Para mejorar la interactividad y la experiencia del usuario.
+- **GitHub Pages**: Para alojar el sitio web de forma gratuita y fácil.
 
----
+## Cómo ver el sitio
 
-## 🛠️ Technologies used
+Para ver la página web en tu navegador, sigue estos pasos:
 
-- HTML5**: For the basic structure of the Web site.
-- CSS3**: For the design and aesthetics of the web site.
-- JavaScript**: To improve interactivity and user experience.
-- Bootstrap**: For responsive design and predefined components.
-- **GitHub Pages**: For free and easy website hosting.
-
----
-
-## 🌐 How to view the site.
-
-To view the website in your web browser, follow these steps:
-
-1. Open your web browser.
-2. Go to [https://lnnb.github.io/](https://lnnb.github.io/).
-
----
-
-## 🎨 Personalización
+1. Abre tu navegador web.
+2. Dirígete a [https://lnnb.github.io/](https://lnnb.github.io/).
+   
+## Personalización
 
 Si deseas personalizar este sitio para tus propios proyectos, puedes seguir los siguientes pasos:
 
-1. Haz un **fork** de este repositorio.
-2. Clona tu repositorio en tu computadora:
-   ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+1. Haz un fork de este repositorio.
+2. Clona tu repositorio en tu computadora.
+3. Modifica los archivos según tus necesidades.
+4. Realiza un commit y push de tus cambios a GitHub.
+   
+Tu sitio web estará disponible en la URL de GitHub Pages una vez que los cambios se hayan desplegado.
+
+## Contribuciones
+
+Si deseas contribuir al proyecto, puedes hacerlo mediante pull requests. Estoy abierto a sugerencias y mejoras para hacer el sitio más útil y atractivo.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Puedes ver los detalles completos en el archivo [LICENSE](LICENSE).
