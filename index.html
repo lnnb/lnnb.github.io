@@ -1,260 +1,198 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Curriculum Vitae de Luciano N. Navarrete Binni - Técnico de Sistemas y Desarrollador Web">
-    <!-- Font Awesome -->
+    <meta name="description"
+        content="Curriculum Vitae de Luciano N. Navarrete Binni - Técnico de Sistemas y Desarrollador Web">
+    <title>Luciano Navarrete | CV Profesional</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- HTML to PDF -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="./img/logo.png">
-    <title>Luciano Navarrete | CV Profesional</title>
 </head>
 
 <body>
-    <div class="container py-5 resume-content">
-        <div class="row align-items-center g-4">
-            <!-- Left Column: Profile and Skills -->
-            <div class="col-lg-4 col-md-5">
-                <!-- Profile Card -->
-                <div class="card">
-                    <div class="profile-header text-center py-4">
-                        <img class="profile-img img-fluid mb-3" src="img/profile.jpg" alt="Luciano Navarrete">
-                        <h2 class="mb-0 text-white">Luciano N. Navarrete Binni</h2>
-                        <p class="text-light mb-0">Técnico de Sistemas & Desarrollador Web</p>
-                    </div>
-                    
-                    <div class="card-body">
-                        <!-- Contact Information -->
-                        <div class="mb-4">
-                            <h5 class="mb-3"><i class="fas fa-user-circle me-2"></i>Información Personal</h5>
-                            <div class="ps-2">
-                                <p class="mb-2"><i class="fas fa-calendar me-2"></i>32 Años</p>
-                                <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Tigre, Buenos Aires</p>
-                                <p class="mb-2"><i class="fas fa-envelope me-2"></i>luciano.n.n.binni@gmail.com</p>
-                                <p class="mb-2"><i class="fas fa-phone me-2"></i>11 2401 3957</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Skills Section -->
-                        <div class="mb-4">
-                            <h5 class="mb-3"><i class="fas fa-code me-2"></i>Habilidades Técnicas</h5>
-                            
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>HTML</span>
-                                    <span>1 Año</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>CSS</span>
-                                    <span>1 Año</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>JavaScript</span>
-                                    <span>1 Año</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>Bootstrap 5</span>
-                                    <span>1 Año</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>Ruby</span>
-                                    <span>1 Año</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Languages Section -->
-                        <div class="mb-4">
-                            <h5 class="mb-3"><i class="fas fa-globe me-2"></i>Idiomas</h5>
-                            
-                            <div class="skill-item">
-                                <div class="skill-name">
-                                    <span>Inglés</span>
-                                    <span>Intermedio</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Education Summary (New section for left column) -->
-                        <div>
-                            <h5 class="mb-3"><i class="fas fa-graduation-cap me-2"></i>Formación</h5>
-                            <ul class="list-unstyled ps-2">
-                                <li class="mb-2">
-                                    <i class="fas fa-university me-2"></i>UTN - Técnico Universitario en Programación
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-university me-2"></i>TamaBA - Técnico Superior en Sonido
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-laptop-code me-2"></i>Argentina Programa 4.0
-                                </li>
-                                <li>
-                                    <i class="fas fa-school me-2"></i>I.A.D.E.S. - Bachillerato en Informática
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <!-- PDF Button (Mobile Only) -->
-                        <div class="d-md-none text-center mt-4">
-                            <button id="btnCrearPdf" class="btn btn-primary"><i class="fas fa-file-pdf me-2"></i>Descargar CV</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Right Column: Experience and Education -->
-            <div class="col-lg-8 col-md-7">
-                <!-- Experience Card -->
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h2><i class="fas fa-briefcase me-2"></i>Experiencia Laboral</h2>
-                        
-                        <!-- Nueva experiencia: Especialista en asistencia técnica -->
-                        <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h5>Especialista en asistencia técnica</h5>
-                                <h6>Hospital Universitario Austral</h6>
-                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>May 2024 – September 2024</p>
-                                <p>
-                                    <ul>
-                                        <li>Gestioné la migración informática de más de 1.000 portátiles y sistemas AIO (All-in-One) de sobremesa, garantizando transiciones sin problemas a entornos de hardware y software actualizados.</li>
-                                        <li>Me encargué de la transferencia de datos, la instalación de software y realicé rigurosas pruebas de rendimiento para asegurar una funcionalidad y una experiencia de usuario óptimas.</li>
-                                        <li>Resolví problemas posteriores a la migración para abordar cualquier inconveniente técnico, asegurando un funcionamiento fluido e ininterrumpido en toda la organización.</li>
-                                        <li>Proporcioné asistencia técnica completa y resoluciones oportunas de problemas de hardware y software, logrando un índice de satisfacción del cliente del 95% mediante el diagnóstico y la resolución eficaz de problemas informáticos en la infraestructura hospitalaria.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Nueva experiencia: Analista de soporte técnico -->
-                        <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h5>Analista de soporte técnico</h5>
-                                <h6>Volkswagen</h6>
-                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>July 2023 – January 2024</p>
-                                <p>
-                                    <ul>
-                                        <li>Proporcioné soporte técnico para maquinaria de líneas de producción automatizadas, solucionando problemas y resolviendo incidencias para garantizar una operación continua y una eficiencia máxima.</li>
-                                        <li>Diagnostiqué y resolví fallos del sistema, implementando soluciones que optimizaron los procesos de producción y redujeron significativamente los tiempos de inactividad.</li>
-                                        <li>Aseguré el cumplimiento de los estándares de calidad y seguridad, siguiendo las normativas de la industria para mantener un entorno de trabajo seguro y eficiente.</li>
-                                        <li>Mantuve y solucioné problemas en sistemas de TI, redes y software, asegurando una funcionalidad óptima y minimizando los tiempos de inactividad en toda la organización.</li>
-                                        <li>Brindé soporte técnico remoto a través de TeamViewer, ofreciendo soluciones rápidas y garantizando operaciones fluidas de los sistemas.</li>
-                                        <li>Utilicé herramientas de análisis de red como Advanced IP Scanner para diagnosticar y resolver problemas de conectividad, asegurando un rendimiento robusto de la red.</li>
-                                        <li>Implementé protocolos de seguridad y gestioné procesos de copias de seguridad, protegiendo datos críticos y garantizando la preparación para la recuperación ante desastres.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Nueva experiencia: Técnico de soporte de sistemas -->
-                        <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h5>Técnico de soporte de sistemas</h5>
-                                <h6>Cenattel</h6>
-                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>February 2020 – May 2022</p>
-                                <p>
-                                    <ul>
-                                        <li>Mantuve y solucioné problemas en sistemas de TI, redes y software, asegurando una funcionalidad óptima y minimizando los tiempos de inactividad en toda la organización.</li>
-                                        <li>Brindé soporte técnico remoto a través de TeamViewer, ofreciendo soluciones rápidas y garantizando operaciones fluidas de los sistemas.</li>
-                                        <li>Utilicé herramientas de análisis de red como Advanced IP Scanner para diagnosticar y resolver problemas de conectividad, asegurando un rendimiento robusto de la red.</li>
-                                        <li>Establecí medidas de seguridad avanzadas y modernicé los procedimientos de copia de seguridad para proteger datos sensibles de más de 50 usuarios.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Nueva experiencia: Técnico de asistencia técnica -->
-                        <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h5>Técnico de asistencia técnica</h5>
-                                <h6>Hewlett Packard Enterprise / DXC</h6>
-                                <p class="text-muted mb-2"><i class="fas fa-calendar-alt me-2"></i>July 2017 – March 2019</p>
-                                <p>
-                                    <ul>
-                                        <li>Proporcioné soporte técnico remoto para los sistemas POS de McDonald's, impresoras y redes, asegurando resoluciones oportunas para minimizar las interrupciones operativas.</li>
-                                        <li>Diagnostiqué y resolví incidentes, abordando rápidamente los problemas técnicos para garantizar un servicio ininterrumpido y mantener el tiempo de actividad de los sistemas.</li>
-                                        <li>Capacité a los empleados en el uso de sistemas de TI y en las mejores prácticas de ciberseguridad, mejorando el conocimiento del equipo y reforzando las operaciones seguras.</li>
-                                        <li>Colaboré con equipos multifuncionales para implementar actualizaciones de sistemas utilizando marcos de trabajo ITIL, mejorando la eficiencia del flujo de trabajo y optimizando los procesos operativos.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- CV Download -->
-                        <div class="text-center mt-4">
-                            <button id="btnCrearPdf" class="btn btn-primary"><i class="fas fa-file-pdf me-2"></i>Descargar CV</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <!-- Control Panel -->
+    <div class="control-panel">
+        <button id="lang-toggle" class="control-btn" title="Switch Language">ES</button>
+        <button id="theme-toggle" class="control-btn" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <button id="pdf-btn" class="control-btn" title="Download PDF"><i class="fas fa-file-pdf"></i></button>
     </div>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="mb-0">&copy; 2025 - Todos los derechos reservados | Luciano Navarrete Binni</p>
-        </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <img src="img/profile.jpg" alt="Luciano Navarrete" class="profile-img">
+            <div class="header-content">
+                <h1>Luciano N. Navarrete Binni</h1>
+                <div class="header-role" data-i18n="role">Systems Technician & Web Developer</div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:luciano.n.n.binni@gmail.com">luciano.n.n.binni@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="https://wa.me/5491124013957" target="_blank">11 2401 3957</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-i18n="location">Tigre, Buenos Aires</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section>
+            <h2 data-i18n="profileTitle">Professional Profile</h2>
+            <p data-i18n="profileText">
+                Systems Technician and Web Developer with solid experience in technical support, network administration,
+                and incident resolution. Passionate about technology and software development, with proven ability to
+                manage hardware migrations, optimize operational processes, and provide high-quality customer service. I
+                seek to contribute my technical and problem-solving skills in a challenging environment.
+            </p>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2 data-i18n="experienceTitle">Work Experience</h2>
+
+            <div class="resume-item">
+                <div class="resume-header">
+                    <div>
+                        <span class="resume-title" data-i18n="exp1Title">Technical Support Specialist</span>
+                        <span class="resume-company"> | Hospital Universitario Austral</span>
+                    </div>
+                    <span class="resume-date" data-i18n="exp1Date">May 2024 – Sept 2024</span>
+                </div>
+                <div class="resume-content" data-i18n="exp1Desc">
+                    <ul>
+                        <li>Managed the IT migration of over 1,000 devices, ensuring a smooth transition of hardware and
+                            software.</li>
+                        <li>Performed data transfer, software installation, and performance testing to guarantee
+                            operability.</li>
+                        <li>Resolved post-migration incidents and provided comprehensive technical support, achieving
+                            95% customer satisfaction.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-header">
+                    <div>
+                        <span class="resume-title" data-i18n="exp2Title">Technical Support Analyst</span>
+                        <span class="resume-company"> | Volkswagen</span>
+                    </div>
+                    <span class="resume-date" data-i18n="exp2Date">July 2023 – Jan 2024</span>
+                </div>
+                <div class="resume-content" data-i18n="exp2Desc">
+                    <ul>
+                        <li>Provided technical support for automated production machinery, minimizing downtime.</li>
+                        <li>Diagnosed and resolved system, network, and software failures, optimizing production
+                            processes.</li>
+                        <li>Provided remote support (TeamViewer) and managed backups and security protocols.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-header">
+                    <div>
+                        <span class="resume-title" data-i18n="exp3Title">Systems Support Technician</span>
+                        <span class="resume-company"> | Cenattel</span>
+                    </div>
+                    <span class="resume-date" data-i18n="exp3Date">Feb 2020 – May 2022</span>
+                </div>
+                <div class="resume-content" data-i18n="exp3Desc">
+                    <ul>
+                        <li>Maintained and troubleshot IT systems, networks, and software for over 50 users.</li>
+                        <li>Implemented security measures and modernized backup procedures to protect sensitive data.
+                        </li>
+                        <li>Diagnosed connectivity issues using network analysis tools.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-header">
+                    <div>
+                        <span class="resume-title" data-i18n="exp4Title">Technical Assistance Technician</span>
+                        <span class="resume-company"> | Hewlett Packard Enterprise / DXC</span>
+                    </div>
+                    <span class="resume-date" data-i18n="exp4Date">July 2017 – March 2019</span>
+                </div>
+                <div class="resume-content" data-i18n="exp4Desc">
+                    <ul>
+                        <li>Remote technical support for POS systems, printers, and networks (Client: McDonald's).</li>
+                        <li>Trained users on IT systems and cybersecurity best practices.</li>
+                        <li>Collaborated on system updates under ITIL frameworks.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2 data-i18n="educationTitle">Education</h2>
+
+            <div class="resume-item">
+                <div class="resume-header">
+                    <span class="resume-title" data-i18n="edu1Title">University Technician in Programming</span>
+                    <span class="resume-date">UTN</span>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-header">
+                    <span class="resume-title" data-i18n="edu2Title">Higher Technician in Sound</span>
+                    <span class="resume-date">TamaBA</span>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-header">
+                    <span class="resume-title" data-i18n="edu3Title">Argentina Programa 4.0 Certification</span>
+                    <span class="resume-date">Certificación</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2 data-i18n="skillsTitle">Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag" data-i18n="skill1">HTML5 / CSS3</span>
+                <span class="skill-tag" data-i18n="skill2">JavaScript</span>
+                <span class="skill-tag" data-i18n="skill3">Bootstrap 5</span>
+                <span class="skill-tag" data-i18n="skill4">Ruby</span>
+                <span class="skill-tag" data-i18n="skill5">Soporte Técnico IT</span>
+                <span class="skill-tag" data-i18n="skill6">Redes & Conectividad</span>
+                <span class="skill-tag" data-i18n="skill7">Hardware & Software</span>
+                <span class="skill-tag" data-i18n="skill8">Inglés (Intermedio)</span>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p data-i18n="footerRights">&copy; 2025 Luciano Navarrete Binni. All rights reserved.</p>
     </footer>
-    
-    <!-- Back to Top Button -->
-    <a href="#" class="to-top">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="./js/main.js"></script>
+
+    <!-- Scripts -->
+    <script src="./js/translations.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
